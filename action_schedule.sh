@@ -4,8 +4,8 @@
 function version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | head -n 1)" != "$1"; }
 function set_env() { echo "$1=$2" >> $GITHUB_ENV; }
 
-APP_NAME="legado"
-APP_GIT_URL="https://github.com/gedoor/legado.git"
+APP_NAME='MyBookshelf'
+APP_GIT_URL='https://github.com/gedoor/MyBookshelf.git'
 APP_SUFFIX="A"
 APP_WORKSPACE="/opt/$APP_NAME"
 APP_UPLOAD="$APP_WORKSPACE/app/build/outputs/apk/app/release"
