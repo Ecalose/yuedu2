@@ -2,8 +2,8 @@
 
 function set_env() { echo "$1=$2" >> $GITHUB_ENV; }
 
-APP_NAME="legado"
-APP_GIT_URL="https://github.com/gedoor/legado.git"
+APP_NAME='MyBookshelf'
+APP_GIT_URL='https://github.com/gedoor/MyBookshelf.git'
 APP_SUFFIX="A"
 if [ $SECRETS_ENABLE = 'true' ] && [ -n "$SECRETS_APP_NAME" ] && [ -n "$SECRETS_GIT_URL" ]; then
     APP_NAME=$SECRETS_APP_NAME
